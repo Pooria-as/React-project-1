@@ -1,18 +1,38 @@
 import React from "react";
 import Header from "./components/Header/Header";
-
+import MainSlider from './components/Carousel/MainSlider'
+import styled from "styled-components";
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      AppBarBgColor: '#2f2f2f'
+    }
+  }
+
+  componentDidMount() {
+    document.addEventListener("scroll", () => {
+      const backgroundcolor = window.scrollY < 30 ? this.state.AppBarBgColor : "transparent";
+      this.setState({ AppBarBgColor: backgroundcolor });
+    });
   }
 
   render() {
-    return (<div className="App">
-      <Header/>
-     </div>)
+    const { AppBarBgColor } = this.state
+    return (<AppContainer >
+      <Header AppBarBgColor={AppBarBgColor} />
+      <MainSlider />
+    </AppContainer>)
   }
 
 }
+
+
+const AppContainer = styled.div`
+/* background-color:red; */
+height:1500px  ;
+`
+
 
 
 export default App;

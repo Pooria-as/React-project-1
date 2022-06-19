@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { AppBar, IconButton, Toolbar } from '@material-ui/core'
 import MenuIcon from '@mui/icons-material/Menu';
 import SideBar from './SideBar';
-const Header = () => {
+const Header = ({ AppBarBgColor }) => {
 
     const [SideBarStatus, setSideBarStatus] = useState(false)
     const OnCloseSideBar = () => {
@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <AppBar
             position='fixed'
-            style={{ "background": "#2f2f2f", "boxShadow": 'none', "padding": '1rem 0rem' }}>
+            style={{ "background": `${AppBarBgColor}`, "boxShadow": 'none', "padding": '1rem 0rem' }}>
             <Toolbar>
                 <div className='header_logo'>
                     <div className='font_rightneous header_logo_venue'>
