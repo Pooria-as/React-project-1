@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header/Header";
 import MainSlider from './components/Carousel/MainSlider'
 import styled from "styled-components";
+import GlobalStyle from "./components/GlobalStyles/GlobalStyles";
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -20,6 +21,7 @@ class App extends React.Component {
   render() {
     const { AppBarBgColor } = this.state
     return (<AppContainer >
+      <GlobalStyle/>
       <Header AppBarBgColor={AppBarBgColor} />
       <MainSlider />
     </AppContainer>)

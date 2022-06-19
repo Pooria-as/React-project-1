@@ -138,7 +138,7 @@ footer .footer_copyright {
     padding-right: 49px;
 }
 .countdown_wrapper .countdown_item:last-child .countdown_time{
-    border:none;
+    border-left:1px dashed white;
 }
 
 .countdown_wrapper .countdown_tag {
