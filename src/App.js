@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import MainSlider from './components/Carousel/MainSlider'
 import styled from "styled-components";
 import GlobalStyle from "./components/GlobalStyles/GlobalStyles";
+import Information from "./components/Information/Information";
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -24,6 +25,7 @@ class App extends React.Component {
       <GlobalStyle/>
       <Header AppBarBgColor={AppBarBgColor} />
       <MainSlider />
+      <Information/>
     </AppContainer>)
   }
 

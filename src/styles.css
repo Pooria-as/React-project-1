@@ -156,14 +156,25 @@ footer .footer_copyright {
     padding: 170px 0px;
 }
 
+@media only screen and (max-width: 756px) {
+    .vn_wrapper {
+        display: inline-block;
+        text-align: center;
+        /* padding: 170px 0px; */
+    }
+  }
+
 .vn_item {
     width:50%;
+    margin: 0 0.3rem;
     color:#ffffff;
     text-align: center;
+
 }
                       
 .vn_item .vn_outer {
     width: 300px;
+
     border: 2px solid #828282;
     margin: auto;
     padding: 5px;
