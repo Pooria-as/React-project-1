@@ -4,6 +4,8 @@ import MainSlider from './components/Carousel/MainSlider'
 import styled from "styled-components";
 import GlobalStyle from "./components/GlobalStyles/GlobalStyles";
 import Information from "./components/Information/Information";
+import Highlight from "./components/Highlight/Highlight";
+import Location from "./components/Location/Location";
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -26,6 +28,8 @@ class App extends React.Component {
       <Header AppBarBgColor={AppBarBgColor} />
       <MainSlider />
       <Information/>
+      <Highlight/>
+      <Location/>
     </AppContainer>)
   }
 

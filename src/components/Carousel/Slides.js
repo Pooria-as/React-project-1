@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import slide_one from "../../images/slide_one.jpg"
 import slide_two from "../../images/slide_two.jpg"
 import slide_three from "../../images/slide_three.jpg"
+import styled from 'styled-components';
 const Slides = () => {
   const settings = {
     dots: true,
@@ -66,5 +67,6 @@ const Slides = () => {
     </div >
   )
 }
+
 
 export default Slides
